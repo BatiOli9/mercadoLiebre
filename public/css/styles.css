@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Elementos Header*/
+
+.header {
+    width: 100vw;
+    height: 17vh;
+    background-color: #EAC926;
+    position: relative;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin: 8px;
+}
+
+.logo-search-button {
+    display: flex;
+    position: relative;
+}
+
+.logo{
+    box-sizing: content-box;
+    height: 50px;
+    width: 35%;
+    position: absolute;
+    top: 10%;
+}
+
+.search {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    height: 30px;
+    width: 50%;
+}
+
+.search-button {
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    height: 30px;
+    width: 7%;
+}
+
+.info {
+    font-size: 16px;
+    text-align: center;
+    transition: 0.3s;
+    position: absolute;
+    top: 40%;
+}
+
+.info:hover {
+    color: #03264C;
+}
+
+.barra-navegacion-2, .barra-navegacion-1 {
+    visibility: hidden;
+   font-size: 14px; 
+}
+
+
+.articulos-barras {
+    color: #111;
+    transition: 0.2s;
+}
+
+.articulos-barras:hover {
+    color: #1259c3;
+}
+
+
+#icono-menu {
+    position: absolute;
+    bottom: 5%;
+    right: 45%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 7px;
+    color: #fff;
+    background-color: #1259c3;
+    border-radius: 4px;
+}
+
+.boton-menu {
+    visibility: visible;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: 17vh;
+}
+
+.banner-img {
+    width: 100vw;
+    height: 17vh;
+}
+/* Main */
+
+.main {
+    background-color: #ebebeb;
+    width: 100vw;
+}
+
+.hr-separador {
+    color: #111;
+}
+
+.productos-section {
+    width: 100%;
+}
+
+/* Elementos Home*/
+
+.producto-nombre-envio-precio-descuento {
+    padding: 10px;
+    position: relative;
+}
+
+
+.productos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+.camion {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #fff;
+    color: green;
+    border: 1px green solid;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transition: 0.3s;
+}
+
+
+.titular-productos {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: green;
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+}
+
+.nombre-producto {
+    visibility: hidden;
+    font-size: 16px;
+}
+
+.producto-home {
+    margin: 1rem auto; 
+    width: 50%;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.producto-home:hover .camion {
+    transform: rotate(-90deg);
+}
+
+.img-productos-home {
+    margin: auto;
+    width: 90%;
+}
+
+/* Elementos Footer */
+
+.footer {
+    position: relative;
+    width: 100vw;
+}
+
+.footer-info {
+    width: 100vw;
+}
+
+.copyright-info {
+    box-sizing: border-box;
+    position: relative;
+    left: 30%;
+}
+
+
+.metodo-pago, .envios-gratis, .seguridad {
+    text-align: center;
+    position: relative;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#iconos-footer {
+    padding: 10px;
+    font-size: 2.4em;
+    color: #03264C;
+    transition: 0.2s;
+}
+
+#iconos-footer:hover {
+    color: #1259c3;
+}
+
+.titulos-footer {
+    font-size: 1.5em;
+    padding: 2px 2px -30px 2px;
+}
+
+.parrafos-footer {
+    padding: 0;
+    font-size: 1em;
+}
+
+/* Register */
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-register {
+    background-color: #ebebeb;
+    width: 100vw;
+    position: relative;
+}
+
+.crea-tu-cuenta-titulo {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.nombre-apellido-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    width: 70%;
+    height: 40px;
+}
+
+.username-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    width: 70%;
+    height: 40px;
+}
+
+.correo-electronico-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    width: 70%;
+    height: 40px;
+}
+
+.contraseña-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    width: 70%;
+    height: 40px;
+}
+
+.confirm-contraseña-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    width: 70%;
+    height: 40px;
+}
+
+
+.fecha-nacimiento-label-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    width: 70%;
+    height: 40px;
+    font-weight: 700;
+}
+
+.fecha-nacimiento-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 40px;
+}
+
+.domicilio-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    width: 70%;
+    height: 40px;
+}
+
+.label-perfil-usuario-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    font-weight: 700;
+}
+
+.intereses-texto-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    font-weight: 700;
+}
+
+.comprador-vendedor-register {
+    display: flex;
+    flex-direction: column;
+}
+
+.comprador {
+    margin-left: 20%;
+}
+
+.vendedor {
+    margin-left: 20%;
+    margin-top: 0.5%;
+}
+
+.vendedor-p-register, .comprador-p-register {
+    margin-left: 2%;
+}
+
+.intereses-register {
+    display: flex;
+    flex-direction: column;
+}
+
+.intereses-elemento {
+    margin-left: 20%;
+}
+
+.intereses-label {
+    margin-left: 0.5%;
+}
+
+.foto-perfil-p-register {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    font-weight: 700;
+}
+
+.foto-perfil-register {
+    margin-left: 20%;
+    margin-top: 1%;
+    top: 84%;
+}
+
+.borrar-todo-register {
+    margin-top: 4%;
+    margin-left: 15%;
+    width: 70%;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.borrar-todo-register:hover {
+    background-color: red;
+    color: #111;
+}
+
+.crear-cuenta-register {
+    margin-top: 2%;
+    margin-left: 15%;
+    width: 70%;
+    height: 40px;
+    transition: 0.3s;
+    margin-bottom: 2%;
+}
+
+.crear-cuenta-register:hover {
+    background-color: #EAC926;
+    color: #111;
+}
+
+.crear-cuenta-a-register {
+    color: #111;
+}
+
+/* Login */
+
+.main-login {
+    background-color: #ebebeb;
+    width: 100vw;
+    position: relative;
+}
+
+.login-title {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.correo-electronico-login {
+    margin-left: 15%;
+    margin-top: 2%;
+    height: 40px;
+    width: 70%;
+}
+
+.contraseña-login {
+    margin-left: 15%;
+    margin-top: 2%;
+    height: 40px;
+    width: 70%;
+}
+
+.borrar-todo-login {
+    margin-left: 15%;
+    margin-top: 4%;
+    height: 40px;
+    width: 70%;
+    transition: 0.3s;
+}
+
+.borrar-todo-login:hover {
+    background-color: red;
+}
+
+.boton-login {
+    margin-left: 15%;
+    margin-top: 2%;
+    height: 40px;
+    width: 70%;
+    transition: 0.3s;
+    margin-bottom: 2%;
+}
+
+.boton-login:hover {
+    background-color: #EAC926;
+}
+
+.a-boton-login {
+    color: #111;
+}
+
+@media (min-width: 400px){
+    /* Navegacion en Tablets*/
+    .nombre-producto {
+        visibility: visible;
+    }
+    .producto-home {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .producto-home:hover {
+        box-shadow: 0px 0px 20px rgb(100, 100, 100);
+    }
+    .boton-menu {
+        visibility: hidden;
+    }
+    .header {
+        height: 25vh;
+    }
+    .barra-navegacion-1, .barra-navegacion-2 {
+        visibility: visible;
+    }
+    .producto-home {
+        width: 35%;
+    }
+    .productos {
+        flex-direction: row;
+    }
+    .banner {
+        height: 20vh;
+    }
+    .banner-img {
+        height: 20vh;
+    }
+    .camion {
+        left: 80%;
+        top: 30%;
+    }
+    .search-button {
+        width: 5%;
+    }
+    .borrar-todo-register {
+        left: 45%;
+    }
+    .crear-cuenta-register {
+        left: 42.5%;
+    }
+    .borrar-todo-login {
+        left: 43%;
+    }
+    .boton-login {
+        left: 40.5%;
+    }
+}
+
+@media (min-width: 769px){
+    /* Navegacion en Desktop*/
+    .header {
+        height: 20vh;
+    }
+    .logo {
+        right: 70%;
+        top: 35%;
+    }
+    .search {
+        width: 40%;
+        position: absolute;
+        left: 27%;
+        height: 40px;
+        top: 55%;
+    }
+    .search-button {
+        left: 66%;
+        top: 55%;
+        height: 40px;
+    }
+    .info {
+        position: absolute;
+        bottom: 60%;
+        left: 73%;
+    }
+    .nombre-producto {
+        visibility: hidden;
+    }
+    .boton-menu {
+        visibility: hidden;
+    }
+    .barra-navegacion-1, .barra-navegacion-2 {
+        visibility: visible;
+    }
+    .producto-home {
+        width: 20%;
+    }
+    .producto-home:hover .nombre-producto {
+        visibility: visible;
+    }
+    .productos {
+        flex-direction: row;
+    }
+    .footer-info {
+        height: 25vh;
+        display: flex;
+    }
+    .camion {
+        font-size: 18px;
+        height: 35px;
+        width: 35px;
+        top: 10%;
+    }
+    .banner {
+        height: 45vh;
+    }
+    .banner-img {
+        height: 45vh;
+    }
+    .search-button {
+        width: 30px;
+    }
+    .barra-navegacion-1 {
+        position: absolute;
+        left: 10%;
+        top: 70%;
+
+    }
+    .barra-navegacion-2 {
+        position: absolute;
+        left: 55%;
+        top: 70%;
+    }
+    .borrar-todo-register {
+        left: 48%;
+    }
+    .crear-cuenta-register {
+        left: 47%;
+    }
+    .comprador-p-register {
+        left: 22%;
+    }
+    .vendedor-p-register {
+        left: 62%;
+    }
+    .electronica-p-register, .moda-p-register, .hogar-p-register, .jugueteria-p-register, .vida-sana-p-register {
+        left: 22%;
+    }
+    .borrar-todo-login {
+        left: 47%;
+    }
+    .boton-login {
+        left: 46.3%;
+    }
+    .descuento {
+        left: 48%;
+    }
+}
