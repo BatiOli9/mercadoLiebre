@@ -4,7 +4,7 @@ const path = require('path');
 const port = process.env.PORT || 3030;
 
 
-app.listen(port, () =>{console.log("Servidor corriendo en http://localhost:3030" + port)});
+app.listen(port, () =>{console.log("Servidor corriendo en http://localhost:" + port)});
 
 app.use(express.static("./public"));
 
