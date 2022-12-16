@@ -13,7 +13,7 @@
 
 .header {
     width: 100vw;
-    height: 17vh;
+    height: 30vh;
     background-color: #EAC926;
     position: relative;
 }
@@ -63,6 +63,8 @@ li {
 }
 
 .info {
+    position: relative;
+    top: 25%;
     font-size: 16px;
     text-align: center;
     transition: 0.3s;
@@ -535,6 +537,7 @@ li {
         left: 40.5%;
     }
     .info {
+        top: 0%;
         margin-top: 7%;
     }
 }
@@ -561,10 +564,10 @@ li {
         height: 40px;
     }
     .info {
-        position: absolute;
-        bottom: 60%;
-        left: 73%;
-        margin-bottom: 1.5%;
+       margin-left: 67%;
+       position: relative;
+       top: -70%;
+       font-size: 1em;
     }
     .nombre-producto {
         visibility: hidden;
