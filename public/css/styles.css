@@ -46,6 +46,12 @@ li {
     top: 50%;
     height: 30px;
     width: 50%;
+    transition: 1s;
+}
+
+.search:hover {
+    box-shadow: rgba(0, 0, 0, 100);
+    border: solid 2px #111;
 }
 
 .search-button {
@@ -161,6 +167,7 @@ li {
 
 .titular-productos {
     font-size: 24px;
+    margin-left: 2.5%;
 }
 
 .precio {
@@ -217,7 +224,6 @@ li {
 
 .metodo-pago, .envios-gratis, .seguridad {
     text-align: center;
-    position: relative;
     margin-right: 5%;
     margin-left: 5%;
 }
@@ -491,6 +497,14 @@ li {
     .barra-navegacion-1, .barra-navegacion-2 {
         visibility: visible;
     }
+    .barra-navegacion-1 {
+        position: absolute;
+        top: 60%;
+    }
+    .barra-navegacion-2 {
+        position: absolute;
+        top: 80%;
+    }
     .producto-home {
         width: 35%;
     }
@@ -589,14 +603,13 @@ li {
     }
     .barra-navegacion-1 {
         position: absolute;
-        left: 10%;
         top: 70%;
-
+        margin-left: 10%;
     }
     .barra-navegacion-2 {
         position: absolute;
-        left: 55%;
         top: 70%;
+        margin-left: 60%;
     }
     .borrar-todo-register {
         left: 48%;
