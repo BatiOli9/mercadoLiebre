@@ -4,14 +4,9 @@ const path = require('path');
 const port = process.env.PORT || 3030;
 
 
-app.listen(port, () =>{console.log("Servidor corriendo en http://localhost:" + port)});
-
+app.listen(port, () =>{console.log("Servidor corriendo en http://localhost:3030" + port)});
 
 app.use(express.static("./public"));
-
-app.listen(3030, () => {
-    console.log('Servidor Corriendo')
-} );
 
 app.get('/', function(req, res) {
     let htmlPath = path.resolve(__dirname, './views/home.html')
